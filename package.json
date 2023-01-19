@@ -1,0 +1,22 @@
+{
+  "name": "lex-v1-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-lex-runtime-service": "^3.252.0",
+    "@voiceflow/base-types": "^2.78.0",
+    "axios": "^1.2.3",
+    "cli-ux": "^6.0.9",
+    "dotenv": "^16.0.3",
+    "minimist": "^1.2.7",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  }
+}
