@@ -5,11 +5,17 @@
   "license": "MIT",
   "dependencies": {
     "@aws-sdk/client-lex-runtime-service": "^3.252.0",
+    "@voiceflow/alexa-types": "^2.12.26",
     "@voiceflow/base-types": "^2.78.0",
+    "@voiceflow/slate-serializer": "^1.3.0",
+    "@voiceflow/voiceflow-types": "^3.23.2",
+    "aws-sdk": "^2.1298.0",
     "axios": "^1.2.3",
     "cli-ux": "^6.0.9",
     "dotenv": "^16.0.3",
+    "jszip": "^3.10.1",
     "minimist": "^1.2.7",
+    "transliteration": "^2.3.5",
     "typescript": "^4.9.4"
   },
   "devDependencies": {
@@ -17,6 +23,7 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/runtime/index.ts",
+    "export": "ts-node src/export/index.ts"
   }
 }

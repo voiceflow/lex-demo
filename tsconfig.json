@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "types": ["node"]
+    "types": ["node"],
+    "esModuleInterop": true,
+    "lib": ["es2021"]
   }
 }
