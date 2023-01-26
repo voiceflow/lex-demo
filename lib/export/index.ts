@@ -12,11 +12,12 @@ import { getAmazonSlotType, sanitizeResourceName } from "./utils";
 // get first parameter from command line
 const [, , ...args] = process.argv;
 
-const readFileName = args[0] || "project.vf";
-console.log("\x1b[36m%s\x1b[0m", `Reading ${readFileName}`);
-const content = JSON.parse(fs.readFileSync(readFileName, "utf8"));
-const readFileNamePath = path.dirname(readFileName);
+const readFilePath = args[0] || "project.vf";
+const { dir: readFileDirectory, name: readFileName } = path.parse(readFilePath);
 
+console.log("\x1b[36m%s\x1b[0m", `Reading ${readFileName}`);
+
+const content = JSON.parse(fs.readFileSync(readFilePath, "utf8"));
 const {
   version: { platformData },
   diagrams,
@@ -68,7 +69,8 @@ Object.values(diagrams).forEach((diagram: VoiceflowDiagram.Diagram) => {
   });
 });
 
-const writePathName = path.join(readFileNamePath, "project.zip");
+const exportFileName = `${readFileName}.zip`;
+const writePathName = path.join(readFileDirectory, exportFileName);
 
 zipIntents(lexIntents)
   .generateNodeStream({
@@ -79,6 +81,6 @@ zipIntents(lexIntents)
   .on("finish", () => {
     console.log(
       "\x1b[36m%s\x1b[0m",
-      "Successfully exported intents to project.zip"
+      `Successfully exported intents to ${exportFileName}`
     );
   });

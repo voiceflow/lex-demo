@@ -1,6 +1,6 @@
 // view the README.md file for additional instructions
 import * as dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ path: __dirname + "/.env" });
 
 import { cli } from "cli-ux";
 import { Request } from "@voiceflow/base-types";

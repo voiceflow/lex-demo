@@ -23,7 +23,7 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "start": "ts-node src/runtime/index.ts",
-    "export": "ts-node src/export/index.ts"
+    "start": "ts-node lib/runtime/index.ts",
+    "export": "ts-node lib/export/index.ts"
   }
 }

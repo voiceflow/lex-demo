@@ -2009,11 +2009,6 @@
   dependencies:
     "is-number" "^7.0.0"
 
-"transliterate@^1.0.1":
-  "integrity" "sha512-axhGb0vNR1G+GWpUhT1mavr+r/ueIKVxhk3ABfOUuxmNE27O1PMsqu5G4GCy73DBvONf4KkZ5qxgyp5WXOWk7g=="
-  "resolved" "https://registry.npmjs.org/transliterate/-/transliterate-1.0.1.tgz"
-  "version" "1.0.1"
-
 "transliteration@^2.3.5":
   "integrity" "sha512-HAGI4Lq4Q9dZ3Utu2phaWgtm3vB6PkLUFqWAScg/UW+1eZ/Tg6Exo4oC0/3VUol/w4BlefLhUUSVBr/9/ZGQOw=="
   "resolved" "https://registry.npmjs.org/transliteration/-/transliteration-2.3.5.tgz"
