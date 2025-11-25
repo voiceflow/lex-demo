@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Update Nov 25, 2025: This repository has been archived and will not accept further changes.
+
 # Lex V1 + Voiceflow Demo
 
 This repository contains two different types of Voiceflow integrations. These implementations are lightweight proof-of-concept projects that are meant to be expanded on.
